@@ -7,9 +7,17 @@ addEventListener("DOMContentLoaded",()=>{
     btn.addEventListener("click",()=>{
         const user=document.getElementById("username").value;
         const pass=document.getElementById("password").value;
-        alert("Login Successful...");
+        if(user==''){
+            alert("Please Enter the username...");
+        }
+        else if(pass==''){
+            alert("Please Enter the password...");
+        }
+        else{
         objects.username=user;
         objects.password=pass;
         console.log(objects);
+        alert("Login Successful...");
+        }
 })
 })
