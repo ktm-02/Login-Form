@@ -1,10 +1,15 @@
 addEventListener("DOMContentLoaded",()=>{
-const btn=document.getElementById("btn")
-btn.addEventListener("click",()=>{
-    const user=document.getElementById("username").value;
-    const pass=document.getElementById("password").value;
-    alert("Login Successful...")
-    console.log(user)
-    console.log(pass)
+    const objects={
+        username:"",
+        password:"",
+    }
+    const btn=document.getElementById("btn")
+    btn.addEventListener("click",()=>{
+        const user=document.getElementById("username").value;
+        const pass=document.getElementById("password").value;
+        alert("Login Successful...");
+        objects.username=user;
+        objects.password=pass;
+        console.log(objects);
 })
 })
